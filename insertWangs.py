@@ -20,13 +20,161 @@ race = {
     "Gnomes": "f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d",
     "HalfElfs": "45f4ac10-3c89-4fb2-b37d-f973bb9110c0",
     "Halflings": "78cd3bcc-1c43-4a2a-aa80-c34322c16a04",
-    "Half-Orcs": "5c39a726-71c8-4748-ba8d-f768b3c11a91",
+    "HalfOrcs": "5c39a726-71c8-4748-ba8d-f768b3c11a91",
     "Humans": "0eb594cb-8820-4be6-a58d-8be7a1a98fba",
     "Tieflings": "b6dccbed-30f3-424b-a181-c4540cf38197",
 }
 
 
 genitals = {
+    "Dragonborn": {
+        "Female_Genital_A": {
+            "material": "2c75ec63-da78-af8c-ab43-25b5bb2586ee",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "a5c39d9c-de70-9796-2d87-f4d08652c790",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_A": {
+            "material": "822f90a6-6a04-7c61-018a-134ff67fa5a5",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "84b4ba3d-4e01-b78a-2698-5a844afab398",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    },
+    "Dwarves": {
+        "Female_Genital_A": {
+            "material": "4147f0f8-b3d9-4409-846f-73c28f109e52",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "60ee8123-fff4-14c3-5a55-3d249773abb7",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_C": {
+            "material": "ec2db586-9600-3462-520b-90504b13ccdf",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_A": {
+            "material": "98b23715-b994-e3fa-7abd-9a8944be39d7",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "ff81adfe-996f-76e4-1cc2-87f5a927cf30",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_C": {
+            "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    },
+    "Githyanki": {
+        "Female_Genital_A": {
+            "material": "286aa6b2-fa78-f9a1-f35c-d037dd5d290a",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "0d8c7a4b-c02a-ea56-d392-0bc38c232a70",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_C": {
+            "material": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_A": {
+            "material": "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "f65ad014-9202-4dd0-57df-62179cc6ca63",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_C": {
+            "material": "57dbb4ab-ee16-3475-d23e-df626ba260bf",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    },
+    "Gnomes": {
+        "Female_Genital_A": {
+            "material": "af0dca83-21a7-a8d9-0ddc-28467eb30ab4",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "a5be54f4-264d-874d-3197-ad1d8a787df9",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_C": {
+            "material": "e5538027-5881-bdf9-f96f-f816f421dbe6",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_A": {
+            "material": "0447e07f-dbec-9ef3-ebb3-10e23a20d50e",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "7a356c17-aff6-c532-bc19-c63ed294b14c",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_C": {
+            "material": "b13b07c5-d498-ace0-b251-786c32ed8fed",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    },
+    # "Halflings": {
+    #     "Female_Genital_A": {
+    #         "material": "af0dca83-21a7-a8d9-0ddc-28467eb30ab4",
+    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+    #     },
+    #     "Female_Genital_B": {
+    #         "material": "a5be54f4-264d-874d-3197-ad1d8a787df9",
+    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+    #     },
+    #     "Female_Genital_C": {
+    #         "material": "e5538027-5881-bdf9-f96f-f816f421dbe6",
+    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+    #     },
+    #     "Male_Genital_A": {
+    #         "material": "0447e07f-dbec-9ef3-ebb3-10e23a20d50e",
+    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+    #     },
+    #     "Male_Genital_B": {
+    #         "material": "7a356c17-aff6-c532-bc19-c63ed294b14c",
+    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+    #     },
+    #     "Male_Genital_C": {
+    #         "material": "b13b07c5-d498-ace0-b251-786c32ed8fed",
+    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+    #     },
+    # },
+    "HalfOrcs": {
+        "Female_Genital_A": {
+            "material": "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "bf0f148c-5eea-bd82-a470-b8777d180fa7",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_C": {
+            "material": "69c37c47-f123-3231-546a-ea5e018d3be5",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_A": {
+            "material": "9c6fbff9-3733-ca3f-e149-af0736e22f85",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_C": {
+            "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    },
     "Humans": {
         "Female_Genital_A": {
             "material": "07168a77-9294-35f1-a78d-04ee9b8c46ad",
@@ -53,6 +201,32 @@ genitals = {
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
         },
     },
+    "Tieflings": {
+        "Female_Genital_A": {
+            "material": "016ccd7e-6163-74a3-24fd-f34209a467da",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "379accf4-28fb-646b-34cf-5b40739eb866",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_C": {
+            "material": "9e15dae9-d1cd-6de8-671a-0cc70997abb9",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_A": {
+            "material": "03ff3d11-7cb4-bd11-a6f7-52024e725a79",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_C": {
+            "material": "20a0a85b-dbed-87e5-965b-baf1b0dc9f38  ",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    }
     # "Elves": {
     #     "Female_Genital_A": {
     #         {
