@@ -379,6 +379,16 @@ def insert_dick_merged(model, uuid):
     visual_id = model["materials"]["material"]
     pubes = model["pubes"]
 
+    pubesXML = ""
+
+    if pubes:
+        pubesXML = f"""
+<node id="Objects">
+  <attribute id="LOD" type="uint8" value="0" />
+  <attribute id="MaterialID" type="FixedString" value="{model["materials"]["pubes"]}" />
+  <attribute id="ObjectID" type="FixedString" value="{model['stem']}.HUM_F_NKD_Body_Genital_D_Pubes_Mesh.1" />
+</node>
+"""
     xml = f"""
 <node id="Resource">
   <attribute id="AttachBone" type="FixedString" value="" />
@@ -420,9 +430,11 @@ def insert_dick_merged(model, uuid):
       <attribute id="MaterialID" type="FixedString" value="{visual_id}" />
       <attribute id="ObjectID" type="FixedString" value="{model['stem']}.HUM_F_NKD_Body_Genital_F_Mesh.0" />
     </node>
+    {pubesXML}
   </children>
 </node>
       """
+
     dick = ET.XML(xml)
     return dick
 
