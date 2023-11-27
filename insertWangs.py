@@ -307,9 +307,15 @@ def rec_walk(dir):
         file_path = dirname.split("/")
         dirname, fname = os.path.split(dirname)
 
-        file_split = path.stem.split("_Genital_", 1)[1]
+        # Get name
+        file_split = path.stem.split("_Genital_", 1)
+        name = file_split[0]
+
+        # Get private parts
+        file_split = file_split[1]
         file_split = file_split.split("_")
         private_parts = file_split[0]
+
         # pubes = "_No_Hair" if 1 < len(file_split) else ""
         pubes = 0 if 1 < len(file_split) else 1
         gender = "Female" if file_path[4] == "_Female" else "Male"
@@ -329,10 +335,9 @@ def rec_walk(dir):
                 "genitals": private_parts,
                 "materials": genitals[raceName][private_parts],
                 "pubes": pubes,
+                "name": name.replace("_", " "),
             }
         )
-
-        print(paths)
 
     return paths
 
@@ -389,7 +394,7 @@ def insert_dick_merged(model, uuid):
   <attribute id="ID" type="FixedString" value="{uuid}" />
   <attribute id="MaterialType" type="uint8" value="0" />
   <!-- Filename for your model without the extension -->
-  <attribute id="Name" type="LSString" value="{model['stem']}" />
+  <attribute id="Name" type="LSString" value="{model['name']}" />
   <attribute id="NeedsSkeletonRemap" type="bool" value="False" />
   <attribute id="RemapperSlotId" type="FixedString" value="" />
   <attribute id="ScalpMaterialId" type="FixedString" value="" />
@@ -489,7 +494,7 @@ def create_mod(args):
 
             # Insert content nodes to localization.
             data = ET.Element("content", {"contentuid": handle, "version": "1"})
-            data.text = model["stem"]
+            data.text = model["name"]
             root.append(data)
 
             # Insert content nodes to character creation visuals.
