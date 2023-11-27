@@ -3,6 +3,7 @@ import argparse
 import uuid
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
+import re
 
 from pathlib import Path
 
@@ -31,27 +32,21 @@ genital = {
 }
 
 genitals = {
-    "Humans": {"material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f", "pubes": ""}
-    # "Humans": {
-    #     "Female_Genital_A": {
-    #         {
-    #             "material": "07168a77-9294-35f1-a78d-04ee9b8c46ad",
-    #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #         },
-    #     },
-    #     "Female_Genital_B": {
-    #         {
-    #             "material": "827afee2-dd5e-8663-ba8b-7c184e7de228",
-    #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #         },
-    #     },
-    #     "Female_Genital_C": {
-    #         {
-    #             "material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f",
-    #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #         },
-    #     },
-    # },
+    # "Humans": {"material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f", "pubes": ""}
+    "Humans": {
+        "Female_Genital_A": {
+            "material": "07168a77-9294-35f1-a78d-04ee9b8c46ad",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_B": {
+            "material": "827afee2-dd5e-8663-ba8b-7c184e7de228",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Female_Genital_C": {
+            "material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+    },
     # "Elves": {
     #     "Female_Genital_A": {
     #         {
@@ -71,7 +66,7 @@ genitals = {
     #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
     #         },
     #     },
-    # },}
+    # },
 }
 
 # BodyShape
@@ -312,16 +307,32 @@ def rec_walk(dir):
         file_path = dirname.split("/")
         dirname, fname = os.path.split(dirname)
 
+        file_split = path.stem.split("_Genital_", 1)[1]
+        file_split = file_split.split("_")
+        private_parts = file_split[0]
+        # pubes = "_No_Hair" if 1 < len(file_split) else ""
+        pubes = 0 if 1 < len(file_split) else 1
+        gender = "Female" if file_path[4] == "_Female" else "Male"
+        private_parts = gender + "_Genital_" + private_parts
+
+        raceName = file_path[3]
+        raceUUID = race[file_path[3]]
+
         paths.append(
             {
                 "stem": path.stem,
                 "suffix": path.suffix,
                 "sex": str(1 if file_path[4] == "_Female" else 0),
-                "race": race[file_path[3]],
-                "raceName": file_path[3],
+                "race": raceUUID,
+                "raceName": raceName,
                 "dir": dirname,
+                "genitals": private_parts,
+                "materials": genitals[raceName][private_parts],
+                "pubes": pubes,
             }
         )
+
+        print(paths)
 
     return paths
 
@@ -360,7 +371,8 @@ def insert_dick_character_creation(model, handle, uuid):
 # Insert XML for _merged.lsx
 def insert_dick_merged(model, uuid):
     path = model["dir"]
-    visual_id = genitals[model["raceName"]]["material"]
+    visual_id = model["materials"]["material"]
+    pubes = model["pubes"]
 
     xml = f"""
 <node id="Resource">
