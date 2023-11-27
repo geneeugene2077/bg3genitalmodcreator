@@ -25,14 +25,8 @@ race = {
     "Tieflings": "b6dccbed-30f3-424b-a181-c4540cf38197",
 }
 
-# Private Parts UUID
-genital = {
-    "penis": "d27831df-2891-42e4-b615-ae555404918b",
-    "vagina": "a0738fdf-ca0c-446f-a11d-6211ecac3291",
-}
 
 genitals = {
-    # "Humans": {"material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f", "pubes": ""}
     "Humans": {
         "Female_Genital_A": {
             "material": "07168a77-9294-35f1-a78d-04ee9b8c46ad",
@@ -81,29 +75,6 @@ genitals = {
     # },
 }
 
-# BodyShape
-BodyShape = {
-    "Average": 0,
-    "Strong": 1,
-}
-
-# BodyType
-BodyType = {
-    "Male": 0,
-    "Female": 1,
-}
-
-# Texture
-VisualResource = {
-    "circumcised": {
-        "female": "0fcbfb16-9551-0ea0-f97e-ff499a408b01",
-        "male": "0fcbfb16-9551-0ea0-f97e-ff499a408b01",
-    },
-    "uncircumcised": {
-        "female": "0fcbfb16-9551-0ea0-f97e-ff499a408b01",
-        "male": "0fcbfb16-9551-0ea0-f97e-ff499a408b01",
-    },
-}
 
 CharacterCreationAppearanceVisualsXML = """
 <save>
@@ -228,10 +199,6 @@ def create_folders(name):
     mkdir(f"Generated/Public/{name}/Dwarves/_Female")
     mkdir(f"Generated/Public/{name}/Dwarves/_Male")
 
-    # Elves
-    # mkdir(f"Generated/Public/{name}/Elves/_Female")
-    # mkdir(f"Generated/Public/{name}/Elves/_Male")
-
     # Githyanki
     mkdir(f"Generated/Public/{name}/Githyanki/_Female")
     mkdir(f"Generated/Public/{name}/Githyanki/_Male")
@@ -326,21 +293,33 @@ def rec_walk(dir):
         # Get private parts
         file_split = file_split[1]
         file_split = file_split.split("_")
-        private_parts = file_split[0]
+        private_parts_id = file_split[0]
 
         # pubes = "_No_Hair" if 1 < len(file_split) else ""
         pubes = 0 if 1 < len(file_split) else 1
         gender = "Female" if file_path[4] == "_Female" else "Male"
-        private_parts = gender + "_Genital_" + private_parts
+        private_parts = gender + "_Genital_" + private_parts_id
 
         raceName = file_path[3]
         raceUUID = race[file_path[3]]
+
+        # 0 = Male, 1 = Female
+        bodyType = str(1 if "_Female" in file_path[4] else 0)
+
+        # 0 = Average, 1 = Strong
+        bodyShape = str(1 if "Strong" in file_path[4] else 0)
+
+        # Private Parts UUID
+        penis = "d27831df-2891-42e4-b615-ae555404918b"
+        vagina = "a0738fdf-ca0c-446f-a11d-6211ecac3291"
+        genital_id = str(vagina if private_parts_id == "A" else penis)
 
         paths.append(
             {
                 "stem": path.stem,
                 "suffix": path.suffix,
-                "sex": str(1 if file_path[4] == "_Female" else 0),
+                "bodyType": bodyType,
+                "bodyShape": bodyShape,
                 "raceUUID": raceUUID,
                 "raceName": raceName,
                 "dir": dirname,
@@ -348,6 +327,7 @@ def rec_walk(dir):
                 "materials": genitals[raceName][private_parts],
                 "pubes": pubes,
                 "name": name.replace("_", " "),
+                "genital_id": genital_id,
             }
         )
 
@@ -360,9 +340,9 @@ def insert_dick_character_creation(model, handle, uuid):
     xml = f"""
 <node id="CharacterCreationAppearanceVisual">
   <!-- 0 = Average, 1 = Strong -->
-  <attribute id="BodyShape" type="uint8" value="0" />
+  <attribute id="BodyShape" type="uint8" value="{model['bodyShape']}" />
   <!-- 0 = Male, 1 = Female -->
-  <attribute id="BodyType" type="uint8" value="{model['sex']}" />
+  <attribute id="BodyType" type="uint8" value="{model['bodyType']}" />
   <!-- Name for your genital option, established in XXX.loca.xml -->
   <attribute id="DisplayName" type="TranslatedString" handle="{handle}" version="1" />
   <!-- Race -->
@@ -376,7 +356,7 @@ def insert_dick_character_creation(model, handle, uuid):
   <children>
     <node id="Tags">
       <!-- Tags genital option as penis or vulva. IDK what the vulva one is and don't feel like finding it sorry. -->
-      <attribute id="Object" type="guid" value="d27831df-2891-42e4-b615-ae555404918b" />
+      <attribute id="Object" type="guid" value="{model['genital_id']}" />
     </node>
   </children>
 </node>
@@ -562,8 +542,6 @@ def create_mod(args):
                 # Insert content nodes to character creation visuals.
                 for element in merged_children:
                     element.append(insert_dick_merged(model, uuid))
-
-            print(model)
 
         # Beautify _merged.lsx.
         dom = ET.tostring(merged_root)
