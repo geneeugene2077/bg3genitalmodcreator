@@ -46,6 +46,18 @@ genitals = {
             "material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
         },
+        "Male_Genital_A": {
+            "material": "10b5f0d2-64f1-3a5f-2e9b-451cf35ef3ee",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_B": {
+            "material": "4add0105-0d3a-f68a-5484-660c0be7eecc",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
+        "Male_Genital_C": {
+            "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
+            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+        },
     },
     # "Elves": {
     #     "Female_Genital_A": {
