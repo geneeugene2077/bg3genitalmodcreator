@@ -47,7 +47,7 @@ genitals = {
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
         },
         "Male_Genital_A": {
-            "material": "10b5f0d2-64f1-3a5f-2e9b-451cf35ef3ee",
+            "material": "6dfda8c4-6d14-4538-2994-8b0fedc1dc61",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
         },
         "Male_Genital_B": {
@@ -229,8 +229,8 @@ def create_folders(name):
     mkdir(f"Generated/Public/{name}/Dwarves/_Male")
 
     # Elves
-    mkdir(f"Generated/Public/{name}/Elves/_Female")
-    mkdir(f"Generated/Public/{name}/Elves/_Male")
+    # mkdir(f"Generated/Public/{name}/Elves/_Female")
+    # mkdir(f"Generated/Public/{name}/Elves/_Male")
 
     # Githyanki
     mkdir(f"Generated/Public/{name}/Githyanki/_Female")
@@ -341,7 +341,7 @@ def rec_walk(dir):
                 "stem": path.stem,
                 "suffix": path.suffix,
                 "sex": str(1 if file_path[4] == "_Female" else 0),
-                "race": raceUUID,
+                "raceUUID": raceUUID,
                 "raceName": raceName,
                 "dir": dirname,
                 "genitals": private_parts,
@@ -366,7 +366,7 @@ def insert_dick_character_creation(model, handle, uuid):
   <!-- Name for your genital option, established in XXX.loca.xml -->
   <attribute id="DisplayName" type="TranslatedString" handle="{handle}" version="1" />
   <!-- Race -->
-  <attribute id="RaceUUID" type="guid" value="{model['race']}" />
+  <attribute id="RaceUUID" type="guid" value="{model['raceUUID']}" />
   <!-- What Slot the option goes in -->
   <attribute id="SlotName" type="FixedString" value="Private Parts" />
   <!-- Unique ID for each option, generated in Modders' Multitool -->
@@ -528,6 +528,42 @@ def create_mod(args):
             # Insert content nodes to character creation visuals.
             for element in merged_children:
                 element.append(insert_dick_merged(model, uuid))
+
+            if model["raceName"] == "Humans":
+                model["raceName"] = "Elves"
+                model["raceUUID"] = race[model["raceName"]]
+
+                # Insert content nodes to character creation visuals.
+                for element in visuals_children:
+                    element.append(insert_dick_character_creation(model, handle, uuid))
+
+                # Insert content nodes to character creation visuals.
+                for element in merged_children:
+                    element.append(insert_dick_merged(model, uuid))
+
+                model["raceName"] = "HalfElfs"
+                model["raceUUID"] = race[model["raceName"]]
+
+                # Insert content nodes to character creation visuals.
+                for element in visuals_children:
+                    element.append(insert_dick_character_creation(model, handle, uuid))
+
+                # Insert content nodes to character creation visuals.
+                for element in merged_children:
+                    element.append(insert_dick_merged(model, uuid))
+
+                model["raceName"] = "Drows"
+                model["raceUUID"] = race[model["raceName"]]
+
+                # Insert content nodes to character creation visuals.
+                for element in visuals_children:
+                    element.append(insert_dick_character_creation(model, handle, uuid))
+
+                # Insert content nodes to character creation visuals.
+                for element in merged_children:
+                    element.append(insert_dick_merged(model, uuid))
+
+            print(model)
 
         # Beautify _merged.lsx.
         dom = ET.tostring(merged_root)
