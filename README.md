@@ -41,3 +41,6 @@ Copy your GR2 model files in the appropriate folder for example a large female t
 Run `python .\insertWangs.py ModName ModAuthor -g`. You will be asked if you want to overwrite the files. If you have only added your GR2 models this is perfectly safe.
 
 Any edits you make to the lsx files will be overwritten though. So make backups if you have made any edits to the generated files.
+
+Now that you have your mod created you will need to package it for the game. Use https://github.com/ShinyHobo/BG3-Modders-Multitool do this.
+
