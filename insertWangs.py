@@ -4,7 +4,7 @@ import uuid
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 import re
-
+import subprocess
 from pathlib import Path
 
 
@@ -31,96 +31,118 @@ genitals = {
         "Female_Genital_A": {
             "material": "2c75ec63-da78-af8c-ab43-25b5bb2586ee",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": True,
         },
         "Female_Genital_B": {
             "material": "a5c39d9c-de70-9796-2d87-f4d08652c790",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": True,
         },
         "Male_Genital_A": {
             "material": "822f90a6-6a04-7c61-018a-134ff67fa5a5",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": True,
         },
         "Male_Genital_B": {
             "material": "84b4ba3d-4e01-b78a-2698-5a844afab398",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": True,
         },
     },
     "Dwarves": {
         "Female_Genital_A": {
             "material": "4147f0f8-b3d9-4409-846f-73c28f109e52",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_B": {
             "material": "60ee8123-fff4-14c3-5a55-3d249773abb7",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_C": {
             "material": "ec2db586-9600-3462-520b-90504b13ccdf",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_A": {
             "material": "98b23715-b994-e3fa-7abd-9a8944be39d7",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_B": {
             "material": "ff81adfe-996f-76e4-1cc2-87f5a927cf30",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_C": {
             "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
     },
     "Githyanki": {
         "Female_Genital_A": {
             "material": "286aa6b2-fa78-f9a1-f35c-d037dd5d290a",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_B": {
             "material": "0d8c7a4b-c02a-ea56-d392-0bc38c232a70",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_C": {
             "material": "79c3b32b-a243-b949-4aea-4ff285d50fca",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_A": {
             "material": "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_B": {
             "material": "f65ad014-9202-4dd0-57df-62179cc6ca63",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_C": {
             "material": "57dbb4ab-ee16-3475-d23e-df626ba260bf",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
     },
     "Gnomes": {
         "Female_Genital_A": {
             "material": "af0dca83-21a7-a8d9-0ddc-28467eb30ab4",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_B": {
             "material": "a5be54f4-264d-874d-3197-ad1d8a787df9",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_C": {
             "material": "e5538027-5881-bdf9-f96f-f816f421dbe6",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_A": {
             "material": "0447e07f-dbec-9ef3-ebb3-10e23a20d50e",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_B": {
             "material": "7a356c17-aff6-c532-bc19-c63ed294b14c",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_C": {
             "material": "b13b07c5-d498-ace0-b251-786c32ed8fed",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
     },
     # "Halflings": {
@@ -153,78 +175,96 @@ genitals = {
         "Female_Genital_A": {
             "material": "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_B": {
             "material": "bf0f148c-5eea-bd82-a470-b8777d180fa7",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_C": {
             "material": "69c37c47-f123-3231-546a-ea5e018d3be5",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_A": {
             "material": "9c6fbff9-3733-ca3f-e149-af0736e22f85",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_B": {
             "material": "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_C": {
             "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
     },
     "Humans": {
         "Female_Genital_A": {
             "material": "07168a77-9294-35f1-a78d-04ee9b8c46ad",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_B": {
             "material": "827afee2-dd5e-8663-ba8b-7c184e7de228",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_C": {
             "material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_A": {
             "material": "6dfda8c4-6d14-4538-2994-8b0fedc1dc61",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_B": {
             "material": "4add0105-0d3a-f68a-5484-660c0be7eecc",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_C": {
             "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
     },
     "Tieflings": {
         "Female_Genital_A": {
             "material": "016ccd7e-6163-74a3-24fd-f34209a467da",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_B": {
             "material": "379accf4-28fb-646b-34cf-5b40739eb866",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Female_Genital_C": {
             "material": "9e15dae9-d1cd-6de8-671a-0cc70997abb9",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_A": {
             "material": "03ff3d11-7cb4-bd11-a6f7-52024e725a79",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_B": {
             "material": "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
         "Male_Genital_C": {
             "material": "20a0a85b-dbed-87e5-965b-baf1b0dc9f38  ",
             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
+            "lod": False,
         },
     }
     # "Elves": {
@@ -544,8 +584,9 @@ def insert_dick_merged(model, uuid):
     path = model["dir"]
     visual_id = model["materials"]["material"]
     pubes = model["pubes"]
-
+    lod = model["materials"]["lod"]
     pubesXML = ""
+    lodXML = ""
 
     if pubes:
         pubesXML = f"""
@@ -555,6 +596,16 @@ def insert_dick_merged(model, uuid):
   <attribute id="ObjectID" type="FixedString" value="{model['stem']}.HUM_F_NKD_Body_Genital_D_Pubes_Mesh.1" />
 </node>
 """
+
+    if lod:
+        lodXML = f"""
+<node id="Objects">
+  <attribute id="LOD" type="uint8" value="1" />
+  <attribute id="MaterialID" type="FixedString" value="{visual_id}" />
+  <attribute id="ObjectID" type="FixedString" value="{model['stem']}.DGB_F_NKD_Body_Genital_B_Mesh_LOD1.1" />
+</node>
+"""
+
     xml = f"""
 <node id="Resource">
   <attribute id="AttachBone" type="FixedString" value="" />
@@ -597,6 +648,7 @@ def insert_dick_merged(model, uuid):
       <attribute id="ObjectID" type="FixedString" value="{model['stem']}.HUM_F_NKD_Body_Genital_F_Mesh.0" />
     </node>
     {pubesXML}
+    {lodXML}
   </children>
 </node>
       """
@@ -740,6 +792,29 @@ def create_mod(args):
         # Write localization xml file.
         with open(loca, "w") as f:
             f.write(dom)
+
+        # cwd = os.getcwd()
+        # divine = '"E:\ExportTool-v1.18.2\Tools\divine.exe"'
+        # game = '"C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\bin"'
+
+        # E:\ExportTool-v1.18.2\Tools\divine.exe -g "bg3" -s "E:\bg3mod\BagODicks\" -d "E:\bg3mod\BagODicks\BagODicks" -a create-package"
+
+        # subprocess.call(
+        #     [
+        #         divine,
+        #         "-g",
+        #         game,
+        #         "-s",
+        #         cwd,
+        #         "-d",
+        #         name,
+        #         "-a",
+        #         "create-package",
+        #         "shell=True",
+        #     ]
+        # )
+
+        # print("packaged mod")
 
         # Alert user
         print(f"Created mod {name} with UUID {mod_uuid}")
