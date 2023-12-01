@@ -6,9 +6,8 @@ import xml.dom.minidom as minidom
 import re
 import subprocess
 from pathlib import Path
+import pprint
 
-
-saved_path_file = ".cache.pk"
 
 # RaceUUID
 race = {
@@ -608,7 +607,7 @@ def rec_walk(dir):
         private_parts_id = file_split[0]
 
         # pubes = "_No_Hair" if 1 < len(file_split) else ""
-        pubes = 0 if 1 < len(file_split) else 1
+        pubes = "" if 1 < len(file_split) else "_NoHair"
         gender = "Female" if file_path[4] == "_Female" else "Male"
         private_parts = gender + "_Genital_" + private_parts_id
 
@@ -626,24 +625,23 @@ def rec_walk(dir):
         vagina = "a0738fdf-ca0c-446f-a11d-6211ecac3291"
         genital_id = str(vagina if private_parts_id == "A" else penis)
 
-        print(pubes)
         paths.append(
             {
+                "bodyShape": bodyShape,
+                "bodyType": bodyType,
+                "dir": dirname,
+                "genital_id": genital_id,
+                "genitals": private_parts,
+                "name": name.replace("_", " "),
+                "raceName": raceName,
+                "raceUUID": raceUUID,
                 "stem": path.stem,
                 "suffix": path.suffix,
-                "bodyType": bodyType,
-                "bodyShape": bodyShape,
-                "raceUUID": raceUUID,
-                "raceName": raceName,
-                "dir": dirname,
-                "genitals": private_parts,
-                "materials": genitals[raceName][private_parts],
-                "pubes": pubes,
-                "name": name.replace("_", " "),
-                "genital_id": genital_id,
+                # "materials": genitals[raceName][private_parts],
+                # "pubes": pubes,
             }
         )
-
+        # pprint.pprint(paths)
     return paths
 
 
@@ -678,33 +676,32 @@ def insert_dick_character_creation(model, handle, uuid):
     return dick
 
 
+def genital_mesh_xml(meshObject, stem):
+    pprint.pp(meshObject)
+    meshXML = ""
+    print(meshObject)
+    for mesh in meshObject:
+        meshXML += f"""
+<node id="Objects">
+  <attribute id="LOD" type="uint8" value="{mesh[0]}" />
+  <attribute id="MaterialID" type="FixedString" value="{mesh[1]}" />
+  <attribute id="ObjectID" type="FixedString" value="{stem}.HUM_F_NKD_Body_Genital_D_Pubes_Mesh.{mesh[2]}" />
+</node>
+        """
+        print(meshXML)
+    return meshXML
+
+
 # Insert XML for _merged.lsx
 def insert_dick_merged(model, uuid):
     path = model["dir"]
-    visual_id = model["materials"]["material"]
-    pubes = model["pubes"]
-    lod = model["materials"]["lod"]
-    pubesXML = ""
-    lodXML = ""
+    print(model["genitals"])
+    print(model["raceName"])
 
-    if pubes:
-        pubesXML = f"""
-<node id="Objects">
-  <attribute id="LOD" type="uint8" value="0" />
-  <attribute id="MaterialID" type="FixedString" value="{model["materials"]["pubes"]}" />
-  <attribute id="ObjectID" type="FixedString" value="{model['stem']}.HUM_F_NKD_Body_Genital_D_Pubes_Mesh.1" />
-</node>
-"""
-
-    if lod:
-        lodXML = f"""
-<node id="Objects">
-  <attribute id="LOD" type="uint8" value="1" />
-  <attribute id="MaterialID" type="FixedString" value="{visual_id}" />
-  <attribute id="ObjectID" type="FixedString" value="{model['stem']}.DGB_F_NKD_Body_Genital_B_Mesh_LOD1.1" />
-</node>
-"""
-
+    junk = genitals[model["raceName"]][model["genitals"]]
+    print(model)
+    meshXML = genital_mesh_xml(junk, model["stem"])
+    print(meshXML)
     xml = f"""
 <node id="Resource">
   <attribute id="AttachBone" type="FixedString" value="" />
@@ -740,14 +737,7 @@ def insert_dick_merged(model, uuid):
     </node>
     <node id="Base" />
     <node id="ClothProxyMapping" />
-    <node id="Objects">
-      <attribute id="LOD" type="uint8" value="0" />
-      <!-- Material that should be applied to your mesh -->
-      <attribute id="MaterialID" type="FixedString" value="{visual_id}" />
-      <attribute id="ObjectID" type="FixedString" value="{model['stem']}.HUM_F_NKD_Body_Genital_F_Mesh.0" />
-    </node>
-    {pubesXML}
-    {lodXML}
+    {meshXML}
   </children>
 </node>
       """
