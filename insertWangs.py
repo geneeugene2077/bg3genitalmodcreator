@@ -25,268 +25,366 @@ race = {
     "Tieflings": "b6dccbed-30f3-424b-a181-c4540cf38197",
 }
 
-
+# Objects: lod, materialID, objectId
 genitals = {
     "Dragonborn": {
-        "Female_Genital_A": {
-            "material": "2c75ec63-da78-af8c-ab43-25b5bb2586ee",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": True,
-        },
-        "Female_Genital_B": {
-            "material": "a5c39d9c-de70-9796-2d87-f4d08652c790",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": True,
-        },
-        "Male_Genital_A": {
-            "material": "822f90a6-6a04-7c61-018a-134ff67fa5a5",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": True,
-        },
-        "Male_Genital_B": {
-            "material": "84b4ba3d-4e01-b78a-2698-5a844afab398",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": True,
-        },
+        "Female_Genital_A": [
+            [0, "2c75ec63-da78-af8c-ab43-25b5bb2586ee", 0],
+            [1, "2c75ec63-da78-af8c-ab43-25b5bb2586ee", 1],
+        ],
+        "Female_Genital_B": [
+            [0, "a5c39d9c-de70-9796-2d87-f4d08652c790", 0],
+            [1, "a5c39d9c-de70-9796-2d87-f4d08652c790", 1],
+        ],
+        "Male_Genital_A": [
+            [0, "822f90a6-6a04-7c61-018a-134ff67fa5a5", 0],
+            [1, "822f90a6-6a04-7c61-018a-134ff67fa5a5", 1],
+        ],
+        "Male_Genital_B": [
+            [0, "84b4ba3d-4e01-b78a-2698-5a844afab398", 0],
+            [1, "84b4ba3d-4e01-b78a-2698-5a844afab398", 1],
+        ],
     },
     "Dwarves": {
-        "Female_Genital_A": {
-            "material": "4147f0f8-b3d9-4409-846f-73c28f109e52",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_B": {
-            "material": "60ee8123-fff4-14c3-5a55-3d249773abb7",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_C": {
-            "material": "ec2db586-9600-3462-520b-90504b13ccdf",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_A": {
-            "material": "98b23715-b994-e3fa-7abd-9a8944be39d7",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_B": {
-            "material": "ff81adfe-996f-76e4-1cc2-87f5a927cf30",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_C": {
-            "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
+        "Female_Genital_A": [
+            [0, "4147f0f8-b3d9-4409-846f-73c28f109e52", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "4147f0f8-b3d9-4409-846f-73c28f109e52", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "4147f0f8-b3d9-4409-846f-73c28f109e52", 0],
+            [1, "4147f0f8-b3d9-4409-846f-73c28f109e52", 1],
+        ],
+        "Female_Genital_B": [
+            [0, "60ee8123-fff4-14c3-5a55-3d249773abb7", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "60ee8123-fff4-14c3-5a55-3d249773abb7", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "60ee8123-fff4-14c3-5a55-3d249773abb7", 0],
+            [1, "60ee8123-fff4-14c3-5a55-3d249773abb7", 1],
+        ],
+        "Female_Genital_C": [
+            [0, "ec2db586-9600-3462-520b-90504b13ccdf", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "ec2db586-9600-3462-520b-90504b13ccdf", 0],
+            [1, "ec2db586-9600-3462-520b-90504b13ccdf", 1],
+        ],
+        "Male_Genital_A": [
+            [0, "98b23715-b994-e3fa-7abd-9a8944be39d7", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "98b23715-b994-e3fa-7abd-9a8944be39d7", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "98b23715-b994-e3fa-7abd-9a8944be39d7", 0],
+            [1, "98b23715-b994-e3fa-7abd-9a8944be39d7", 1],
+        ],
+        "Male_Genital_B": [
+            [0, "ff81adfe-996f-76e4-1cc2-87f5a927cf30", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "ff81adfe-996f-76e4-1cc2-87f5a927cf30", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C": [
+            [0, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 0],
+            [1, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 1],
+        ],
     },
     "Githyanki": {
-        "Female_Genital_A": {
-            "material": "286aa6b2-fa78-f9a1-f35c-d037dd5d290a",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_B": {
-            "material": "0d8c7a4b-c02a-ea56-d392-0bc38c232a70",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_C": {
-            "material": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_A": {
-            "material": "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_B": {
-            "material": "f65ad014-9202-4dd0-57df-62179cc6ca63",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_C": {
-            "material": "57dbb4ab-ee16-3475-d23e-df626ba260bf",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
+        "Female_Genital_A": [
+            [0, "286aa6b2-fa78-f9a1-f35c-d037dd5d290a", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "286aa6b2-fa78-f9a1-f35c-d037dd5d290a", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "286aa6b2-fa78-f9a1-f35c-d037dd5d290a", 0],
+            [1, "286aa6b2-fa78-f9a1-f35c-d037dd5d290a", 1],
+        ],
+        "Female_Genital_B": [
+            [0, "0d8c7a4b-c02a-ea56-d392-0bc38c232a70", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "0d8c7a4b-c02a-ea56-d392-0bc38c232a70", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "0d8c7a4b-c02a-ea56-d392-0bc38c232a70", 0],
+            [1, "0d8c7a4b-c02a-ea56-d392-0bc38c232a70", 1],
+        ],
+        "Female_Genital_C": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [0, "07244b85-194d-d491-43d8-55601bd58fbb", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "07244b85-194d-d491-43d8-55601bd58fbb", 0],
+        ],
+        "Male_Genital_A": [
+            [0, "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5", 0],
+            [1, "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5", 1],
+        ],
+        "Male_Genital_B": [
+            [0, "f65ad014-9202-4dd0-57df-62179cc6ca63", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "f65ad014-9202-4dd0-57df-62179cc6ca63", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "f65ad014-9202-4dd0-57df-62179cc6ca63", 0],
+        ],
+        "Male_Genital_C": [
+            [0, "57dbb4ab-ee16-3475-d23e-df626ba260bf", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "57dbb4ab-ee16-3475-d23e-df626ba260bf", 0],
+        ],
     },
     "Gnomes": {
-        "Female_Genital_A": {
-            "material": "af0dca83-21a7-a8d9-0ddc-28467eb30ab4",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_B": {
-            "material": "a5be54f4-264d-874d-3197-ad1d8a787df9",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_C": {
-            "material": "e5538027-5881-bdf9-f96f-f816f421dbe6",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_A": {
-            "material": "0447e07f-dbec-9ef3-ebb3-10e23a20d50e",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_B": {
-            "material": "7a356c17-aff6-c532-bc19-c63ed294b14c",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_C": {
-            "material": "b13b07c5-d498-ace0-b251-786c32ed8fed",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
+        "Female_Genital_A": [
+            [0, "af0dca83-21a7-a8d9-0ddc-28467eb30ab4", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "af0dca83-21a7-a8d9-0ddc-28467eb30ab4", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "af0dca83-21a7-a8d9-0ddc-28467eb30ab4", 0],
+            [1, "af0dca83-21a7-a8d9-0ddc-28467eb30ab4", 1],
+        ],
+        "Female_Genital_B": [
+            [0, "a5be54f4-264d-874d-3197-ad1d8a787df9", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "a5be54f4-264d-874d-3197-ad1d8a787df9", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "a5be54f4-264d-874d-3197-ad1d8a787df9", 0],
+            [1, "a5be54f4-264d-874d-3197-ad1d8a787df9", 1],
+        ],
+        "Female_Genital_C": [
+            [0, "e5538027-5881-bdf9-f96f-f816f421dbe6", 0],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "e5538027-5881-bdf9-f96f-f816f421dbe6", 0],
+        ],
+        "Male_Genital_A": [
+            [0, "0447e07f-dbec-9ef3-ebb3-10e23a20d50e", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "0447e07f-dbec-9ef3-ebb3-10e23a20d50e", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "0447e07f-dbec-9ef3-ebb3-10e23a20d50e", 0],
+            [1, "0447e07f-dbec-9ef3-ebb3-10e23a20d50e", 1],
+        ],
+        "Male_Genital_B": [
+            [0, "7a356c17-aff6-c532-bc19-c63ed294b14c", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "7a356c17-aff6-c532-bc19-c63ed294b14c", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "7a356c17-aff6-c532-bc19-c63ed294b14c", 0],
+            [1, "7a356c17-aff6-c532-bc19-c63ed294b14c", 1],
+        ],
+        "Male_Genital_C": [
+            [0, "b13b07c5-d498-ace0-b251-786c32ed8fed", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "b13b07c5-d498-ace0-b251-786c32ed8fed", 0],
+        ],
     },
-    # "Halflings": {
-    #     "Female_Genital_A": {
-    #         "material": "af0dca83-21a7-a8d9-0ddc-28467eb30ab4",
-    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #     },
-    #     "Female_Genital_B": {
-    #         "material": "a5be54f4-264d-874d-3197-ad1d8a787df9",
-    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #     },
-    #     "Female_Genital_C": {
-    #         "material": "e5538027-5881-bdf9-f96f-f816f421dbe6",
-    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #     },
-    #     "Male_Genital_A": {
-    #         "material": "0447e07f-dbec-9ef3-ebb3-10e23a20d50e",
-    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #     },
-    #     "Male_Genital_B": {
-    #         "material": "7a356c17-aff6-c532-bc19-c63ed294b14c",
-    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #     },
-    #     "Male_Genital_C": {
-    #         "material": "b13b07c5-d498-ace0-b251-786c32ed8fed",
-    #         "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #     },
-    # },
     "HalfOrcs": {
-        "Female_Genital_A": {
-            "material": "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_B": {
-            "material": "bf0f148c-5eea-bd82-a470-b8777d180fa7",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_C": {
-            "material": "69c37c47-f123-3231-546a-ea5e018d3be5",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_A": {
-            "material": "9c6fbff9-3733-ca3f-e149-af0736e22f85",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_B": {
-            "material": "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_C": {
-            "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
+        "Female_Genital_A": [
+            [0, "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4", 0],
+            [1, "e65bbd33-a62d-a944-f8c0-b8bd0daea2e4", 1],
+        ],
+        "Female_Genital_B": [
+            [0, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 0],
+            [1, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 1],
+        ],
+        "Female_Genital_C": [
+            [0, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 0],
+        ],
+        "Male_Genital_A": [
+            [0, "9c6fbff9-3733-ca3f-e149-af0736e22f85", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "9c6fbff9-3733-ca3f-e149-af0736e22f85", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "9c6fbff9-3733-ca3f-e149-af0736e22f85", 0],
+        ],
+        "Male_Genital_B": [
+            [0, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 0],
+            [1, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 1],
+        ],
+        "Male_Genital_C": [
+            [0, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 0],
+        ],
     },
     "Humans": {
-        "Female_Genital_A": {
-            "material": "07168a77-9294-35f1-a78d-04ee9b8c46ad",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_B": {
-            "material": "827afee2-dd5e-8663-ba8b-7c184e7de228",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_C": {
-            "material": "a019b9c1-7b97-9fdd-5469-fb04aecded1f",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_A": {
-            "material": "6dfda8c4-6d14-4538-2994-8b0fedc1dc61",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_B": {
-            "material": "4add0105-0d3a-f68a-5484-660c0be7eecc",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_C": {
-            "material": "da8311de-fd7d-2012-d853-99cfa07a9dfc",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
+        "Female_Genital_A": [
+            [0, "07168a77-9294-35f1-a78d-04ee9b8c46ad", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "07168a77-9294-35f1-a78d-04ee9b8c46ad", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "07168a77-9294-35f1-a78d-04ee9b8c46ad", 0],
+        ],
+        "Female_Genital_B": [
+            [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "827afee2-dd5e-8663-ba8b-7c184e7de228", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
+        ],
+        "Female_Genital_C": [
+            [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
+            [1, "827afee2-dd5e-8663-ba8b-7c184e7de228", 1],
+        ],
+        # MALE
+        "Male_Genital_A": [
+            [0, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 0],
+            [1, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 1],
+            [2, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 2],
+        ],
+        "Male_Genital_B": [
+            [0, "4add0105-0d3a-f68a-5484-660c0be7eecc", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "4add0105-0d3a-f68a-5484-660c0be7eecc", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "4add0105-0d3a-f68a-5484-660c0be7eecc", 0],
+            [1, "4add0105-0d3a-f68a-5484-660c0be7eecc", 1],
+            [2, "4add0105-0d3a-f68a-5484-660c0be7eecc", 2],
+        ],
+        "Male_Genital_C": [
+            [0, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "4add0105-0d3a-f68a-5484-660c0be7eecc", 0],
+        ],
     },
     "Tieflings": {
-        "Female_Genital_A": {
-            "material": "016ccd7e-6163-74a3-24fd-f34209a467da",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_B": {
-            "material": "379accf4-28fb-646b-34cf-5b40739eb866",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Female_Genital_C": {
-            "material": "9e15dae9-d1cd-6de8-671a-0cc70997abb9",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_A": {
-            "material": "03ff3d11-7cb4-bd11-a6f7-52024e725a79",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_B": {
-            "material": "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-        "Male_Genital_C": {
-            "material": "20a0a85b-dbed-87e5-965b-baf1b0dc9f38  ",
-            "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-            "lod": False,
-        },
-    }
-    # "Elves": {
-    #     "Female_Genital_A": {
-    #         {
-    #             "material": "4976fb80-b3b2-adb3-5318-3cb1ef649ed0",
-    #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #         },
-    #     },
-    #     "Female_Genital_B": {
-    #         {
-    #             "material": "0fcbfb16-9551-0ea0-f97e-ff499a408b01",
-    #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #         },
-    #     },
-    #     "Female_Genital_C": {
-    #         {
-    #             "material": "4938541f-b59a-8cce-77b2-e875b5c3a6c6",
-    #             "pubes": "79c3b32b-a243-b949-4aea-4ff285d50fca",
-    #         },
-    #     },
-    # },
+        "Female_Genital_A": [
+            [0, "016ccd7e-6163-74a3-24fd-f34209a467da", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "016ccd7e-6163-74a3-24fd-f34209a467da", 0],
+            [1, "016ccd7e-6163-74a3-24fd-f34209a467da", 1],
+        ],
+        "Female_Genital_B": [
+            [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "379accf4-28fb-646b-34cf-5b40739eb866", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
+            [1, "379accf4-28fb-646b-34cf-5b40739eb866", 1],
+        ],
+        "Female_Genital_C": [
+            [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
+            [1, "379accf4-28fb-646b-34cf-5b40739eb866", 1],
+        ],
+        # MALE
+        "Male_Genital_A": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [0, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 1],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 2],
+            [1, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 0],
+            [1, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 1],
+        ],
+        "Male_Genital_B": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+            [1, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 1],
+        ],
+        "Male_Genital_C": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+        ],
+    },
 }
 
 
@@ -528,6 +626,7 @@ def rec_walk(dir):
         vagina = "a0738fdf-ca0c-446f-a11d-6211ecac3291"
         genital_id = str(vagina if private_parts_id == "A" else penis)
 
+        print(pubes)
         paths.append(
             {
                 "stem": path.stem,
@@ -792,29 +891,6 @@ def create_mod(args):
         # Write localization xml file.
         with open(loca, "w") as f:
             f.write(dom)
-
-        # cwd = os.getcwd()
-        # divine = '"E:\ExportTool-v1.18.2\Tools\divine.exe"'
-        # game = '"C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\bin"'
-
-        # E:\ExportTool-v1.18.2\Tools\divine.exe -g "bg3" -s "E:\bg3mod\BagODicks\" -d "E:\bg3mod\BagODicks\BagODicks" -a create-package"
-
-        # subprocess.call(
-        #     [
-        #         divine,
-        #         "-g",
-        #         game,
-        #         "-s",
-        #         cwd,
-        #         "-d",
-        #         name,
-        #         "-a",
-        #         "create-package",
-        #         "shell=True",
-        #     ]
-        # )
-
-        # print("packaged mod")
 
         # Alert user
         print(f"Created mod {name} with UUID {mod_uuid}")
