@@ -721,8 +721,8 @@ def insert_dick_merged(model, uuid):
   <attribute id="NeedsSkeletonRemap" type="bool" value="False" />
   <attribute id="RemapperSlotId" type="FixedString" value="" />
   <attribute id="ScalpMaterialId" type="FixedString" value="" />
-  <attribute id="SkeletonResource" type="FixedString" value="" />
-  <attribute id="SkeletonSlot" type="FixedString" value="" />
+  <attribute id="SkeletonResource" type="FixedString" value="49339153-0f6a-3fef-3327-b373547e9a22" />
+  <attribute id="SkeletonSlot" type="FixedString" value="Genitals" />
   <attribute id="Slot" type="FixedString" value="Private Parts" />
   <attribute id="SoftbodyResourceID" type="FixedString" value="" />
   <!-- File location for your model. You can reuse the same file for races with identical body types. -->
