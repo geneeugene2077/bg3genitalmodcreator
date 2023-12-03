@@ -938,39 +938,43 @@ def create_mod(args):
             for element in merged_children:
                 element.append(insert_dick_merged(model, uuid))
 
-            # if model["raceName"] == "Humans":
-            #     model["raceName"] = "Elves"
-            #     model["raceUUID"] = race[model["raceName"]]
+                if model["raceName"] == "Humans":
+                    model["raceName"] = "Elves"
+                    model["raceUUID"] = race[model["raceName"]]
 
-            #     # Insert content nodes to character creation visuals.
-            #     for element in visuals_children:
-            #         element.append(insert_dick_character_creation(model, handle, uuid))
+                    # Insert content nodes to character creation visuals.
+                    for element in visuals_children:
+                        element.append(
+                            insert_dick_character_creation(model, handle, uuid)
+                        )
 
-            #     # Insert content nodes to character creation visuals.
-            #     for element in merged_children:
-            #         element.append(insert_dick_merged(model, uuid))
+                    # Insert content nodes to character creation visuals.
+                    for element in merged_children:
+                        element.append(insert_dick_merged(model, uuid))
 
-            #     model["raceName"] = "HalfElfs"
-            #     model["raceUUID"] = race[model["raceName"]]
+                    model["raceName"] = "HalfElfs"
+                    model["raceUUID"] = race[model["Elves"]]
 
-            #     # Insert content nodes to character creation visuals.
-            #     for element in visuals_children:
-            #         element.append(insert_dick_character_creation(model, handle, uuid))
+                    # Insert content nodes to character creation visuals.
+                    for element in visuals_children:
+                        element.append(
+                            insert_dick_character_creation(model, handle, uuid)
+                        )
 
-            #     # Insert content nodes to character creation visuals.
-            #     for element in merged_children:
-            #         element.append(insert_dick_merged(model, uuid))
+                    # Insert content nodes to character creation visuals.
+                    for element in merged_children:
+                        element.append(insert_dick_merged(model, uuid))
 
-            #     model["raceName"] = "Drows"
-            #     model["raceUUID"] = race[model["raceName"]]
+                model["raceName"] = "Drows"
+                model["raceUUID"] = race[model["Humans"]]
 
-            #     # Insert content nodes to character creation visuals.
-            #     for element in visuals_children:
-            #         element.append(insert_dick_character_creation(model, handle, uuid))
+                # Insert content nodes to character creation visuals.
+                for element in visuals_children:
+                    element.append(insert_dick_character_creation(model, handle, uuid))
 
-            #     # Insert content nodes to character creation visuals.
-            #     for element in merged_children:
-            #         element.append(insert_dick_merged(model, uuid))
+                # Insert content nodes to character creation visuals.
+                for element in merged_children:
+                    element.append(insert_dick_merged(model, uuid))
 
         # Beautify _merged.lsx.
         dom = ET.tostring(merged_root)
