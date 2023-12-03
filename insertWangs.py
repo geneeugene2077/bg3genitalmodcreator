@@ -793,7 +793,7 @@ def insert_dick_character_creation(model, handle, uuid):
 def genital_mesh_xml(meshObject, stem):
     pprint.pp(meshObject)
     meshXML = ""
-    print(meshObject)
+    # print(meshObject)
     for mesh in meshObject:
         meshXML += f"""
 <node id="Objects">
@@ -802,20 +802,15 @@ def genital_mesh_xml(meshObject, stem):
   <attribute id="ObjectID" type="FixedString" value="{stem}.HUM_F_NKD_Body_Genital_D_Pubes_Mesh.{mesh[2]}" />
 </node>
         """
-        print(meshXML)
     return meshXML
 
 
 # Insert XML for _merged.lsx
 def insert_dick_merged(model, uuid):
     path = model["dir"]
-    print(model["genitals"])
-    print(model["raceName"])
-
     junk = genitals[model["raceName"]][model["genitals"]]
-    print(model)
     meshXML = genital_mesh_xml(junk, model["stem"])
-    print(meshXML)
+
     xml = f"""
 <node id="Resource">
   <attribute id="AttachBone" type="FixedString" value="" />
@@ -939,6 +934,7 @@ def create_mod(args):
                 element.append(insert_dick_merged(model, uuid))
 
                 if model["raceName"] == "Humans":
+                    print(model)
                     model["raceName"] = "Elves"
                     model["raceUUID"] = race[model["raceName"]]
 
@@ -952,8 +948,8 @@ def create_mod(args):
                     for element in merged_children:
                         element.append(insert_dick_merged(model, uuid))
 
-                    model["raceName"] = "HalfElfs"
-                    model["raceUUID"] = race[model["Elves"]]
+                    model["raceName"] = "Humans"
+                    model["raceUUID"] = race["HalfElfs"]
 
                     # Insert content nodes to character creation visuals.
                     for element in visuals_children:
@@ -965,16 +961,18 @@ def create_mod(args):
                     for element in merged_children:
                         element.append(insert_dick_merged(model, uuid))
 
-                model["raceName"] = "Drows"
-                model["raceUUID"] = race[model["Humans"]]
+                    model["raceName"] = "Humans"
+                    model["raceUUID"] = race["Drows"]
 
-                # Insert content nodes to character creation visuals.
-                for element in visuals_children:
-                    element.append(insert_dick_character_creation(model, handle, uuid))
+                    # Insert content nodes to character creation visuals.
+                    for element in visuals_children:
+                        element.append(
+                            insert_dick_character_creation(model, handle, uuid)
+                        )
 
-                # Insert content nodes to character creation visuals.
-                for element in merged_children:
-                    element.append(insert_dick_merged(model, uuid))
+                    # Insert content nodes to character creation visuals.
+                    for element in merged_children:
+                        element.append(insert_dick_merged(model, uuid))
 
         # Beautify _merged.lsx.
         dom = ET.tostring(merged_root)
