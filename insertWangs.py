@@ -102,6 +102,64 @@ genitals = {
             [1, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 1],
         ],
     },
+    "Elves": {
+        "Female_Genital_A": [
+            [0, "4976fb80-b3b2-adb3-5318-3cb1ef649ed0", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "4976fb80-b3b2-adb3-5318-3cb1ef649ed0", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_A_NoHair": [
+            [0, "4976fb80-b3b2-adb3-5318-3cb1ef649ed0", 0],
+        ],
+        "Female_Genital_B": [
+            [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Female_Genital_B_NoHair": [
+            [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
+        ],
+        "Female_Genital_C": [
+            [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Genital_C_NoHair": [
+            [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
+            [1, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 1],
+        ],
+        # MALE
+        "Male_Genital_A": [
+            [0, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_A_NoHair": [
+            [0, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 0],
+            [1, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 1],
+            [2, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 2],
+        ],
+        "Male_Genital_B": [
+            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 2],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
+        ],
+        "Male_Genital_B_NoHair": [
+            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
+            [1, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 1],
+            [2, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 2],
+        ],
+        "Male_Genital_C": [
+            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Genital_C_NoHair": [
+            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
+        ],
+    },
     "Githyanki": {
         "Female_Genital_A": [
             [0, "286aa6b2-fa78-f9a1-f35c-d037dd5d290a", 0],
