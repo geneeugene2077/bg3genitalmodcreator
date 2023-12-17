@@ -411,15 +411,15 @@ genitals = {
         ],
         # MALE
         "Male_Genital_A": [
-            [0, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 0],
+            [0, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-            [1, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 2],
+            [1, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
         "Male_Genital_A_NoHair": [
-            [0, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 0],
-            [1, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 1],
-            [2, "6dfda8c4-6d14-4538-2994-8b0fedc1dc61", 2],
+            [0, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 0],
+            [1, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 1],
+            [2, "b4548d94-0fd8-b3af-436a-dd2d86cf47f1", 2],
         ],
         "Male_Genital_B": [
             [0, "4add0105-0d3a-f68a-5484-660c0be7eecc", 0],
@@ -433,11 +433,11 @@ genitals = {
             [2, "4add0105-0d3a-f68a-5484-660c0be7eecc", 2],
         ],
         "Male_Genital_C": [
-            [0, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 0],
+            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Genital_C_NoHair": [
-            [0, "4add0105-0d3a-f68a-5484-660c0be7eecc", 0],
+            [0, "029238e9-85bb-3c65-523b-22edb9aee2d2", 0],
         ],
     },
     "Tieflings": {
