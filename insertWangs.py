@@ -103,6 +103,7 @@ genitals = {
         ],
     },
     "Elves": {
+        # Female
         "Female_Genital_A": [
             [0, "4976fb80-b3b2-adb3-5318-3cb1ef649ed0", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -128,6 +129,32 @@ genitals = {
         "Female_Genital_C_NoHair": [
             [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
             [1, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 1],
+        ],
+        # Female Strong
+        "Female_Strong_Genital_A": [
+            [0, "921879e2-35da-1c9f-c15e-4b7e59d10feb", 0],
+            [0, "921879e2-35da-1c9f-c15e-4b7e59d10feb", 1],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_A_NoHair": [
+            [0, "921879e2-35da-1c9f-c15e-4b7e59d10feb", 0],
+            [1, "921879e2-35da-1c9f-c15e-4b7e59d10feb", 1],
+        ],
+        "Female_Strong_Genital_B": [
+            [0, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_B_NoHair": [
+            [0, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 0],
+        ],
+        "Female_Strong_Genital_C": [
+            [0, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_C_NoHair": [
+            [0, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 0],
+            [1, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 1],
         ],
         # MALE
         "Male_Genital_A": [
@@ -383,6 +410,7 @@ genitals = {
         ],
     },
     "Humans": {
+        # Female
         "Female_Genital_A": [
             [0, "07168a77-9294-35f1-a78d-04ee9b8c46ad", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -408,6 +436,32 @@ genitals = {
         "Female_Genital_C_NoHair": [
             [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
             [1, "827afee2-dd5e-8663-ba8b-7c184e7de228", 1],
+        ],
+        # Female Strong
+        "Female_Strong_Genital_A": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 2],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
+        ],
+        "Female_Strong_Genital_A_NoHair": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_B": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_B_NoHair": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+        ],
+        "Female_Strong_Genital_C": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_C_NoHair": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [1, "d9793d7d-440d-469c-84db-9e884dfba645", 1],
         ],
         # MALE
         "Male_Genital_A": [
@@ -441,6 +495,7 @@ genitals = {
         ],
     },
     "Tieflings": {
+        # Female
         "Female_Genital_A": [
             [0, "016ccd7e-6163-74a3-24fd-f34209a467da", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -722,7 +777,17 @@ def rec_walk(dir):
 
         # pubes = "_No_Hair" if 1 < len(file_split) else ""
         pubes = "" if 1 < len(file_split) else "_NoHair"
-        gender = "Female" if file_path[4] == "_Female" else "Male"
+
+        gender = ""
+        if file_path[4] == "_Female":
+            gender = "Female"
+        if file_path[4] == "_FemaleStrong":
+            gender = "Female_Strong"
+        if file_path[4] == "_Male":
+            gender = "Male"
+        if file_path[4] == "_MaleStrong":
+            gender = "Male_Strong"
+
         private_parts = gender + "_Genital_" + private_parts_id
 
         raceName = file_path[3]
@@ -755,7 +820,7 @@ def rec_walk(dir):
                 # "pubes": pubes,
             }
         )
-        # pprint.pprint(paths)
+        pprint.pprint(paths)
     return paths
 
 
@@ -791,9 +856,7 @@ def insert_dick_character_creation(model, handle, uuid):
 
 
 def genital_mesh_xml(meshObject, stem):
-    pprint.pp(meshObject)
     meshXML = ""
-    # print(meshObject)
     for mesh in meshObject:
         meshXML += f"""
 <node id="Objects">
@@ -808,6 +871,8 @@ def genital_mesh_xml(meshObject, stem):
 # Insert XML for _merged.lsx
 def insert_dick_merged(model, uuid):
     path = model["dir"]
+    print(model["raceName"] + " " + model["genitals"])
+    print(genitals[model["raceName"]][model["genitals"]])
     junk = genitals[model["raceName"]][model["genitals"]]
     meshXML = genital_mesh_xml(junk, model["stem"])
 
@@ -934,7 +999,6 @@ def create_mod(args):
                 element.append(insert_dick_merged(model, uuid))
 
                 if model["raceName"] == "Humans":
-                    print(model)
                     model["raceName"] = "Elves"
                     model["raceUUID"] = race[model["raceName"]]
 
