@@ -186,6 +186,32 @@ genitals = {
         "Male_Genital_C_NoHair": [
             [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
         ],
+        # Male Strong
+        "Male_Strong_Genital_A": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 2],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
+        ],
+        "Male_Strong_Genital_A_NoHair": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_B": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_B_NoHair": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+        ],
+        "Male_Strong_Genital_C": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_C_NoHair": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [1, "d9793d7d-440d-469c-84db-9e884dfba645", 1],
+        ],
     },
     "Githyanki": {
         "Female_Genital_A": [
@@ -492,6 +518,32 @@ genitals = {
         ],
         "Male_Genital_C_NoHair": [
             [0, "029238e9-85bb-3c65-523b-22edb9aee2d2", 0],
+        ],
+        # Male Strong
+        "Male_Strong_Genital_A": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 2],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
+        ],
+        "Male_Strong_Genital_A_NoHair": [
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
+            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_B": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_B_NoHair": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+        ],
+        "Male_Strong_Genital_C": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_C_NoHair": [
+            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [1, "d9793d7d-440d-469c-84db-9e884dfba645", 1],
         ],
     },
     "Tieflings": {
