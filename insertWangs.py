@@ -24,6 +24,29 @@ race = {
     "Tieflings": "b6dccbed-30f3-424b-a181-c4540cf38197",
 }
 
+skeleton = {
+    "Dragonborn_Male": "b161e591-2d57-5392-d764-f9ca80e695df",
+    "Dragonborn_Female": "733b0bff-3f62-bb0b-d128-846de19836ed",
+    "Dwarves_Male": "953138ec-0b3f-e45d-4221-619165c41bb3",
+    "Dwarves_Female": "2d87542b-da2a-ecd0-9238-dc87e60553b6",
+    "Githyanki_Male": "f2c913fa-574f-1838-d334-0b9b9fb02aeb",
+    "Githyanki_Female": "26cd0916-bee0-d901-642b-2d384d6ebb0b",
+    "Gnomes_Male": "91c98338-d0db-190c-7e7c-8e60533e4fd3",
+    "Gnomes_Female": "25a0e700-dd2d-68d4-0a8e-c68d8360569a",
+    "Halflings_Male": "213bb548-4870-7c4f-d725-b5f0f005d81c",
+    "Halflings_Female": "b8c3036d-d5bd-6b28-cfef-ea490ec4e517",
+    "HalfOrcs_Male": "a9348ac1-62d4-df89-3696-2b1fe190c038",
+    "HalfOrcs_Female": "c54de5d4-1cf3-c062-95c1-bea05504617a",
+    "Humans_Male": "eccc7e98-f303-0bc1-0450-bf0d7120d55e",
+    "Humans_MaleStrong": "be442c7c-a48d-5aad-3a7e-fc50eec96385",
+    "Humans_Female": "4d3627bc-ccbc-e855-6b4f-d5d74d715d22",
+    "Humans_FemaleStrong": "35e347bc-dd74-7e7e-2fb8-a2de0c8be49a",
+    "Tieflings_Male": "fb6ba2ab-36be-6d95-7494-11d31e949b09",
+    "Tieflings_MaleStrong": "85fecf6a-79f6-16f7-66a8-ca0f67d8ae34",
+    "Tieflings_Female": "ffc8d503-a5de-0f8d-c60b-a018cd47a1a64",
+    "Tieflings_FemaleStrong": "49339153-0f6a-3fef-3327-b373547e9a22",
+}
+
 # Objects: lod, materialID, objectId
 genitals = {
     "Dragonborn": {
@@ -198,19 +221,19 @@ genitals = {
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Strong_Genital_B": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Strong_Genital_B_NoHair": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 0],
         ],
         "Male_Strong_Genital_C": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Strong_Genital_C_NoHair": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
-            [1, "d9793d7d-440d-469c-84db-9e884dfba645", 1],
+            [0, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 0],
+            [1, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 1],
         ],
     },
     "Githyanki": {
@@ -531,19 +554,19 @@ genitals = {
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Strong_Genital_B": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "ffd51198-92dc-e904-5771-48e60675b0e8", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Strong_Genital_B_NoHair": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "ffd51198-92dc-e904-5771-48e60675b0e8", 0],
         ],
         "Male_Strong_Genital_C": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
+            [0, "ffd51198-92dc-e904-5771-48e60675b0e8", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "Male_Strong_Genital_C_NoHair": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
-            [1, "d9793d7d-440d-469c-84db-9e884dfba645", 1],
+            [0, "ffd51198-92dc-e904-5771-48e60675b0e8", 0],
+            [1, "ffd51198-92dc-e904-5771-48e60675b0e8", 1],
         ],
     },
     "Tieflings": {
@@ -574,6 +597,32 @@ genitals = {
             [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
             [1, "379accf4-28fb-646b-34cf-5b40739eb866", 1],
         ],
+        #FS
+        "Female_Strong_Genital_A": [
+            [0, "5ddb6d82-965e-3908-f8de-db9792fd9890", 0],
+            [0, "5ddb6d82-965e-3908-f8de-db9792fd9890", 1],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 2],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
+        ],
+        "Female_Strong_Genital_A_NoHair": [
+            [0, "5ddb6d82-965e-3908-f8de-db9792fd9890", 0],
+            [1, "5ddb6d82-965e-3908-f8de-db9792fd9890", 1],
+        ],
+        "Female_Strong_Genital_B": [
+            [0, "79def482-e3d9-e7ee-03dd-3b64030fd20a", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_B_NoHair": [
+            [0, "79def482-e3d9-e7ee-03dd-3b64030fd20a", 0],
+        ],
+        "Female_Strong_Genital_C": [
+            [0, "3ff23746-87be-f226-a7dc-e8721f71ae7b", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Female_Strong_Genital_C_NoHair": [
+            [0, "3ff23746-87be-f226-a7dc-e8721f71ae7b", 0],
+            [1, "3ff23746-87be-f226-a7dc-e8721f71ae7b", 1],
+        ],
         # MALE
         "Male_Genital_A": [
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
@@ -603,6 +652,32 @@ genitals = {
         ],
         "Male_Genital_C_NoHair": [
             [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+        ],
+        # Male Strong
+        "Male_Strong_Genital_A": [
+            [0, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 0],
+            [0, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 1],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 2],
+            [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
+        ],
+        "Male_Strong_Genital_A_NoHair": [
+            [0, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 0],
+            [1, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 1],
+        ],
+        "Male_Strong_Genital_B": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_B_NoHair": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+        ],
+        "Male_Strong_Genital_C": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
+        ],
+        "Male_Strong_Genital_C_NoHair": [
+            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
+            [1, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 1],
         ],
     },
 }
@@ -844,6 +919,7 @@ def rec_walk(dir):
 
         raceName = file_path[3]
         raceUUID = race[file_path[3]]
+        skeletonUUID = skeleton[file_path[3] + file_path[4]]
 
         # 0 = Male, 1 = Female
         bodyType = str(1 if "_Female" in file_path[4] else 0)
@@ -866,6 +942,7 @@ def rec_walk(dir):
                 "name": name.replace("_", " "),
                 "raceName": raceName,
                 "raceUUID": raceUUID,
+                "skeletonUUID": skeletonUUID,
                 "stem": path.stem,
                 "suffix": path.suffix,
                 # "materials": genitals[raceName][private_parts],
@@ -937,7 +1014,7 @@ def insert_dick_merged(model, uuid):
   <attribute id="BoundsMin" type="fvec3" value="-0.04640537 0.8961504 -0.1221507" />
   <attribute id="ClothColliderResourceID" type="FixedString" value="" />
   <!-- Info for pubes. Leave this empty ("") if no (3D) pubes. -->
-  <attribute id="HairPresetResourceId" type="FixedString" value="" />
+  <attribute id="HairPresetResourceId" type="FixedString" value="8f234279-a95b-0dba-d2d4-2aa9fed3b8f2" />
   <attribute id="HairType" type="uint8" value="0" />
   <!-- Unique ID for combined visual information, generated in Modders' Multitool -->
   <attribute id="ID" type="FixedString" value="{uuid}" />
@@ -947,7 +1024,7 @@ def insert_dick_merged(model, uuid):
   <attribute id="NeedsSkeletonRemap" type="bool" value="False" />
   <attribute id="RemapperSlotId" type="FixedString" value="" />
   <attribute id="ScalpMaterialId" type="FixedString" value="" />
-  <attribute id="SkeletonResource" type="FixedString" value="49339153-0f6a-3fef-3327-b373547e9a22" />
+  <attribute id="SkeletonResource" type="FixedString" value="{model['skeletonUUID']}" />
   <attribute id="SkeletonSlot" type="FixedString" value="Genitals" />
   <attribute id="Slot" type="FixedString" value="Private Parts" />
   <attribute id="SoftbodyResourceID" type="FixedString" value="" />
