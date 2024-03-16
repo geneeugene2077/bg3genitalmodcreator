@@ -43,7 +43,7 @@ skeleton = {
     "Humans_FemaleStrong": "35e347bc-dd74-7e7e-2fb8-a2de0c8be49a",
     "Tieflings_Male": "fb6ba2ab-36be-6d95-7494-11d31e949b09",
     "Tieflings_MaleStrong": "85fecf6a-79f6-16f7-66a8-ca0f67d8ae34",
-    "Tieflings_Female": "ffc8d503-a5de-0f8d-c60b-a018cd47a1a64",
+    "Tieflings_Female": "ffc8d503-a5de-0f8d-c60b-a018cd47a1a6",
     "Tieflings_FemaleStrong": "49339153-0f6a-3fef-3327-b373547e9a22",
 }
 
