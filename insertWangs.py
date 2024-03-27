@@ -941,23 +941,15 @@ def insert_dick_character_creation(model, handle, uuid):
     character_uuid = generate_uuid()
     xml = f"""
 <node id="CharacterCreationAppearanceVisual">
-  <!-- 0 = Average, 1 = Strong -->
   <attribute id="BodyShape" type="uint8" value="{model['bodyShape']}" />
-  <!-- 0 = Male, 1 = Female -->
   <attribute id="BodyType" type="uint8" value="{model['bodyType']}" />
-  <!-- Name for your genital option, established in XXX.loca.xml -->
   <attribute id="DisplayName" type="TranslatedString" handle="{handle}" version="1" />
-  <!-- Race -->
   <attribute id="RaceUUID" type="guid" value="{model['raceUUID']}" />
-  <!-- What Slot the option goes in -->
   <attribute id="SlotName" type="FixedString" value="Private Parts" />
-  <!-- Unique ID for each option, generated in Modders' Multitool -->
   <attribute id="UUID" type="guid" value="{character_uuid}" />
-  <!-- Visual information (mesh, textures, etc.) for your genital option, established in _merged.lsf.lsx -->
   <attribute id="VisualResource" type="guid" value="{uuid}" />
   <children>
     <node id="Tags">
-      <!-- Tags genital option as penis or vulva. IDK what the vulva one is and don't feel like finding it sorry. -->
       <attribute id="Object" type="guid" value="{model['genital_id']}" />
     </node>
   </children>
@@ -996,13 +988,10 @@ def insert_dick_merged(model, uuid):
   <attribute id="BoundsMax" type="fvec3" value="0.04660766 1.031223 0.05886364" />
   <attribute id="BoundsMin" type="fvec3" value="-0.04640537 0.8961504 -0.1221507" />
   <attribute id="ClothColliderResourceID" type="FixedString" value="" />
-  <!-- Info for pubes. Leave this empty ("") if no (3D) pubes. -->
   <attribute id="HairPresetResourceId" type="FixedString" value="8f234279-a95b-0dba-d2d4-2aa9fed3b8f2" />
   <attribute id="HairType" type="uint8" value="0" />
-  <!-- Unique ID for combined visual information, generated in Modders' Multitool -->
   <attribute id="ID" type="FixedString" value="{uuid}" />
   <attribute id="MaterialType" type="uint8" value="0" />
-  <!-- Filename for your model without the extension -->
   <attribute id="Name" type="LSString" value="{model['name']}" />
   <attribute id="NeedsSkeletonRemap" type="bool" value="False" />
   <attribute id="RemapperSlotId" type="FixedString" value="" />
@@ -1011,10 +1000,8 @@ def insert_dick_merged(model, uuid):
   <attribute id="SkeletonSlot" type="FixedString" value="Genitals" />
   <attribute id="Slot" type="FixedString" value="Private Parts" />
   <attribute id="SoftbodyResourceID" type="FixedString" value="" />
-  <!-- File location for your model. You can reuse the same file for races with identical body types. -->
   <attribute id="SourceFile" type="LSString" value="{path}/{model['stem']}{model['suffix']}" />
   <attribute id="SupportsVertexColorMask" type="bool" value="True" />
-  <!-- Same as above but change the extension -->
   <attribute id="Template" type="FixedString" value="{path}/{model['stem']}.Dummy_Root.0" />
   <attribute id="_OriginalFileVersion_" type="int64" value="144115207403209033" />
   <children>
