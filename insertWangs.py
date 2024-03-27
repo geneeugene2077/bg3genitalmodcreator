@@ -25,26 +25,26 @@ race = {
 }
 
 skeleton = {
-    "Dragonborn_Male": "b161e591-2d57-5392-d764-f9ca80e695df",
-    "Dragonborn_Female": "733b0bff-3f62-bb0b-d128-846de19836ed",
-    "Dwarves_Male": "953138ec-0b3f-e45d-4221-619165c41bb3",
-    "Dwarves_Female": "2d87542b-da2a-ecd0-9238-dc87e60553b6",
-    "Githyanki_Male": "f2c913fa-574f-1838-d334-0b9b9fb02aeb",
-    "Githyanki_Female": "26cd0916-bee0-d901-642b-2d384d6ebb0b",
-    "Gnomes_Male": "91c98338-d0db-190c-7e7c-8e60533e4fd3",
-    "Gnomes_Female": "25a0e700-dd2d-68d4-0a8e-c68d8360569a",
-    "Halflings_Male": "213bb548-4870-7c4f-d725-b5f0f005d81c",
-    "Halflings_Female": "b8c3036d-d5bd-6b28-cfef-ea490ec4e517",
-    "HalfOrcs_Male": "a9348ac1-62d4-df89-3696-2b1fe190c038",
-    "HalfOrcs_Female": "c54de5d4-1cf3-c062-95c1-bea05504617a",
-    "Humans_Male": "eccc7e98-f303-0bc1-0450-bf0d7120d55e",
-    "Humans_MaleStrong": "be442c7c-a48d-5aad-3a7e-fc50eec96385",
-    "Humans_Female": "4d3627bc-ccbc-e855-6b4f-d5d74d715d22",
-    "Humans_FemaleStrong": "35e347bc-dd74-7e7e-2fb8-a2de0c8be49a",
-    "Tieflings_Male": "fb6ba2ab-36be-6d95-7494-11d31e949b09",
-    "Tieflings_MaleStrong": "85fecf6a-79f6-16f7-66a8-ca0f67d8ae34",
-    "Tieflings_Female": "ffc8d503-a5de-0f8d-c60b-a018cd47a1a6",
-    "Tieflings_FemaleStrong": "49339153-0f6a-3fef-3327-b373547e9a22",
+    "DragonbornMale": "b161e591-2d57-5392-d764-f9ca80e695df",
+    "DragonbornFemale": "733b0bff-3f62-bb0b-d128-846de19836ed",
+    "DwarvesMale": "953138ec-0b3f-e45d-4221-619165c41bb3",
+    "DwarvesFemale": "2d87542b-da2a-ecd0-9238-dc87e60553b6",
+    "GithyankiMale": "f2c913fa-574f-1838-d334-0b9b9fb02aeb",
+    "GithyankiFemale": "26cd0916-bee0-d901-642b-2d384d6ebb0b",
+    "GnomesMale": "91c98338-d0db-190c-7e7c-8e60533e4fd3",
+    "GnomesFemale": "25a0e700-dd2d-68d4-0a8e-c68d8360569a",
+    "HalflingsMale": "213bb548-4870-7c4f-d725-b5f0f005d81c",
+    "HalflingsFemale": "b8c3036d-d5bd-6b28-cfef-ea490ec4e517",
+    "HalfOrcsMale": "a9348ac1-62d4-df89-3696-2b1fe190c038",
+    "HalfOrcsFemale": "c54de5d4-1cf3-c062-95c1-bea05504617a",
+    "HumansMale": "eccc7e98-f303-0bc1-0450-bf0d7120d55e",
+    "HumansMaleStrong": "be442c7c-a48d-5aad-3a7e-fc50eec96385",
+    "HumansFemale": "4d3627bc-ccbc-e855-6b4f-d5d74d715d22",
+    "HumansFemaleStrong": "35e347bc-dd74-7e7e-2fb8-a2de0c8be49a",
+    "TieflingsMale": "fb6ba2ab-36be-6d95-7494-11d31e949b09",
+    "TieflingsMaleStrong": "85fecf6a-79f6-16f7-66a8-ca0f67d8ae34",
+    "TieflingsFemale": "ffc8d503-a5de-0f8d-c60b-a018cd47a1a6",
+    "TieflingsFemaleStrong": "49339153-0f6a-3fef-3327-b373547e9a22",
 }
 
 # Objects: lod, materialID, objectId
@@ -910,7 +910,7 @@ def rec_walk(dir):
         skeletonUUID = skeleton[file_path[3] + file_path[4]]
 
         # 0 = Male, 1 = Female
-        bodyType = str(1 if "_Female" in file_path[4] else 0)
+        bodyType = str(1 if "Female" in file_path[4] else 0)
 
         # 0 = Average, 1 = Strong
         bodyShape = str(1 if "Strong" in file_path[4] else 0)
