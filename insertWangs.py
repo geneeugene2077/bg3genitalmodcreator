@@ -597,7 +597,7 @@ genitals = {
             [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
             [1, "379accf4-28fb-646b-34cf-5b40739eb866", 1],
         ],
-        #FS
+        # FS
         "Female_Strong_Genital_A": [
             [0, "5ddb6d82-965e-3908-f8de-db9792fd9890", 0],
             [0, "5ddb6d82-965e-3908-f8de-db9792fd9890", 1],
@@ -933,8 +933,6 @@ def rec_walk(dir):
                 "skeletonUUID": skeletonUUID,
                 "stem": path.stem,
                 "suffix": path.suffix,
-                # "materials": genitals[raceName][private_parts],
-                # "pubes": pubes,
             }
         )
         pprint.pprint(paths)
