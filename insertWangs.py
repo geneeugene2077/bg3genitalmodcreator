@@ -799,41 +799,40 @@ class XMLFile(File):
 # Generate folders for models.
 def create_folders(name):
     # Dragonborn
-    mkdir(f"Generated/Public/{name}/Dragonborn/_Female")
-    mkdir(f"Generated/Public/{name}/Dragonborn/_Male")
+    mkdir(f"Generated/Public/{name}/Dragonborn/Female")
+    mkdir(f"Generated/Public/{name}/Dragonborn/Male")
 
     # Dwarves
-    mkdir(f"Generated/Public/{name}/Dwarves/_Female")
-    mkdir(f"Generated/Public/{name}/Dwarves/_Male")
+    mkdir(f"Generated/Public/{name}/Dwarves/Female")
+    mkdir(f"Generated/Public/{name}/Dwarves/Male")
 
     # Githyanki
-    mkdir(f"Generated/Public/{name}/Githyanki/_Female")
-    mkdir(f"Generated/Public/{name}/Githyanki/_Male")
+    mkdir(f"Generated/Public/{name}/Githyanki/Female")
+    mkdir(f"Generated/Public/{name}/Githyanki/Male")
 
     # Gnomes
-    mkdir(f"Generated/Public/{name}/Gnomes/_Female")
-    mkdir(f"Generated/Public/{name}/Gnomes/_Male")
+    mkdir(f"Generated/Public/{name}/Gnomes/Female")
+    mkdir(f"Generated/Public/{name}/Gnomes/Male")
 
     # Halflings
-    mkdir(f"Generated/Public/{name}/Halflings/_Female")
-    mkdir(f"Generated/Public/{name}/Halflings/_Male")
+    mkdir(f"Generated/Public/{name}/Halflings/Female")
+    mkdir(f"Generated/Public/{name}/Halflings/Male")
 
     # HalfOrcs
-    mkdir(f"Generated/Public/{name}/HalfOrcs/_Female")
-    mkdir(f"Generated/Public/{name}/HalfOrcs/_Male")
+    mkdir(f"Generated/Public/{name}/HalfOrcs/Female")
+    mkdir(f"Generated/Public/{name}/HalfOrcs/Male")
 
     # Humans
-    mkdir(f"Generated/Public/{name}/Humans/_Female")
-    mkdir(f"Generated/Public/{name}/Humans/_Male")
-    mkdir(f"Generated/Public/{name}/Humans/_FemaleStrong")
-    mkdir(f"Generated/Public/{name}/Humans/_MaleStrong")
-    # mkdir(f"Public/{name}/Content/Assets/Humans")
+    mkdir(f"Generated/Public/{name}/Humans/Female")
+    mkdir(f"Generated/Public/{name}/Humans/Male")
+    mkdir(f"Generated/Public/{name}/Humans/FemaleStrong")
+    mkdir(f"Generated/Public/{name}/Humans/MaleStrong")
 
     # Tieflings
-    mkdir(f"Generated/Public/{name}/Tieflings/_Female")
-    mkdir(f"Generated/Public/{name}/Tieflings/_Male")
-    mkdir(f"Generated/Public/{name}/Tieflings/_FemaleStrong")
-    mkdir(f"Generated/Public/{name}/Tieflings/_MaleStrong")
+    mkdir(f"Generated/Public/{name}/Tieflings/Female")
+    mkdir(f"Generated/Public/{name}/Tieflings/Male")
+    mkdir(f"Generated/Public/{name}/Tieflings/FemaleStrong")
+    mkdir(f"Generated/Public/{name}/Tieflings/MaleStrong")
 
 
 # Add indentation to XML.
@@ -902,18 +901,7 @@ def rec_walk(dir):
         file_split = file_split.split("_")
         private_parts_id = file_split[0]
 
-        # pubes = "_No_Hair" if 1 < len(file_split) else ""
-        pubes = "" if 1 < len(file_split) else "_NoHair"
-
-        gender = ""
-        if file_path[4] == "_Female":
-            gender = "Female"
-        if file_path[4] == "_FemaleStrong":
-            gender = "Female_Strong"
-        if file_path[4] == "_Male":
-            gender = "Male"
-        if file_path[4] == "_MaleStrong":
-            gender = "Male_Strong"
+        gender = file_path[4]
 
         private_parts = gender + "_Genital_" + private_parts_id
 
