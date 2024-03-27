@@ -2,9 +2,6 @@ import os
 import argparse
 import uuid
 import xml.etree.ElementTree as ET
-import xml.dom.minidom as minidom
-import re
-import subprocess
 from pathlib import Path
 import pprint
 
