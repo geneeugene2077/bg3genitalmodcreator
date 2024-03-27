@@ -77,10 +77,6 @@ genitals = {
             [1, "60ee8123-fff4-14c3-5a55-3d249773abb7", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "ec2db586-9600-3462-520b-90504b13ccdf", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         "Male_Genital_A": [
             [0, "98b23715-b994-e3fa-7abd-9a8944be39d7", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -92,10 +88,6 @@ genitals = {
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
             [1, "ff81adfe-996f-76e4-1cc2-87f5a927cf30", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
-        ],
-        "Male_Genital_C": [
-            [0, "da8311de-fd7d-2012-d853-99cfa07a9dfc", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
     },
     "Elves": {
@@ -112,10 +104,6 @@ genitals = {
             [1, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         # Female Strong
         "FemaleStrong_Genital_A": [
             [0, "921879e2-35da-1c9f-c15e-4b7e59d10feb", 0],
@@ -124,10 +112,6 @@ genitals = {
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         "FemaleStrong_Genital_B": [
-            [0, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
-        "FemaleStrong_Genital_C": [
             [0, "48540d0d-341c-bc9c-1319-efdedb6d1dfd", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
@@ -144,10 +128,6 @@ genitals = {
             [1, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Male_Genital_C": [
-            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         # Male Strong
         "MaleStrong_Genital_A": [
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
@@ -156,10 +136,6 @@ genitals = {
             [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
         ],
         "MaleStrong_Genital_B": [
-            [0, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
-        "MaleStrong_Genital_C": [
             [0, "47aa6d48-c209-4e04-bcb2-dbbae68df2ec", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
@@ -177,10 +153,6 @@ genitals = {
             [1, "0d8c7a4b-c02a-ea56-d392-0bc38c232a70", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
-            [0, "07244b85-194d-d491-43d8-55601bd58fbb", 1],
-        ],
         "Male_Genital_A": [
             [0, "6b500f9b-eb8d-39f3-b853-f3fc60a35dd5", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -192,10 +164,6 @@ genitals = {
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
             [1, "f65ad014-9202-4dd0-57df-62179cc6ca63", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
-        ],
-        "Male_Genital_C": [
-            [0, "57dbb4ab-ee16-3475-d23e-df626ba260bf", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
     },
     "Gnomes": {
@@ -211,10 +179,6 @@ genitals = {
             [1, "a5be54f4-264d-874d-3197-ad1d8a787df9", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "e5538027-5881-bdf9-f96f-f816f421dbe6", 0],
-            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         "Male_Genital_A": [
             [0, "0447e07f-dbec-9ef3-ebb3-10e23a20d50e", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -226,10 +190,6 @@ genitals = {
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
             [1, "7a356c17-aff6-c532-bc19-c63ed294b14c", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
-        ],
-        "Male_Genital_C": [
-            [0, "b13b07c5-d498-ace0-b251-786c32ed8fed", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
     },
     "Halflings": {
@@ -245,10 +205,6 @@ genitals = {
             [1, "eb449b09-a900-1ac8-d414-d867726d8c7c", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "eb449b09-a900-1ac8-d414-d867726d8c7c", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         "Male_Genital_A": [
             [0, "0da12a47-dd52-2de3-0fe4-8f944c72b414", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -260,10 +216,6 @@ genitals = {
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
             [1, "ad43d0f8-462c-9dd3-6283-b682986b4f09", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
-        ],
-        "Male_Genital_C": [
-            [0, "ad43d0f8-462c-9dd3-6283-b682986b4f09", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
     },
     "HalfOrcs": {
@@ -279,10 +231,6 @@ genitals = {
             [1, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "bf0f148c-5eea-bd82-a470-b8777d180fa7", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         "Male_Genital_A": [
             [0, "9c6fbff9-3733-ca3f-e149-af0736e22f85", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
@@ -294,10 +242,6 @@ genitals = {
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
             [1, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
-        ],
-        "Male_Genital_C": [
-            [0, "51d4a9eb-1d28-a6fb-1b6d-6d8d30064253", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
     },
     "Humans": {
@@ -314,10 +258,6 @@ genitals = {
             [1, "827afee2-dd5e-8663-ba8b-7c184e7de228", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         # Female Strong
         "FemaleStrong_Genital_A": [
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
@@ -326,10 +266,6 @@ genitals = {
             [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
         ],
         "FemaleStrong_Genital_B": [
-            [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
-        "FemaleStrong_Genital_C": [
             [0, "d9793d7d-440d-469c-84db-9e884dfba645", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
@@ -346,10 +282,6 @@ genitals = {
             [1, "4add0105-0d3a-f68a-5484-660c0be7eecc", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Male_Genital_C": [
-            [0, "68917227-ef70-cf2e-3bb5-6bd553454bb9", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         # Male Strong
         "MaleStrong_Genital_A": [
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 0],
@@ -358,10 +290,6 @@ genitals = {
             [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
         ],
         "MaleStrong_Genital_B": [
-            [0, "ffd51198-92dc-e904-5771-48e60675b0e8", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
-        "MaleStrong_Genital_C": [
             [0, "ffd51198-92dc-e904-5771-48e60675b0e8", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
@@ -378,10 +306,6 @@ genitals = {
             [1, "379accf4-28fb-646b-34cf-5b40739eb866", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Female_Genital_C": [
-            [0, "379accf4-28fb-646b-34cf-5b40739eb866", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
         # FS
         "FemaleStrong_Genital_A": [
             [0, "5ddb6d82-965e-3908-f8de-db9792fd9890", 0],
@@ -391,10 +315,6 @@ genitals = {
         ],
         "FemaleStrong_Genital_B": [
             [0, "79def482-e3d9-e7ee-03dd-3b64030fd20a", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
-        "FemaleStrong_Genital_C": [
-            [0, "3ff23746-87be-f226-a7dc-e8721f71ae7b", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
         # MALE
@@ -410,12 +330,6 @@ genitals = {
             [1, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 2],
             [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
-        "Male_Genital_C": [
-            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-            [1, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 2],
-            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
-        ],
         # Male Strong
         "MaleStrong_Genital_A": [
             [0, "03ff3d11-7cb4-bd11-a6f7-52024e725a79", 0],
@@ -424,10 +338,6 @@ genitals = {
             [1, "7c3f090b-ca3c-542d-2468-7c8d2c964359", 3],
         ],
         "MaleStrong_Genital_B": [
-            [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
-            [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-        ],
-        "MaleStrong_Genital_C": [
             [0, "68c4fb93-a8e1-2a2b-d19c-0ffa853bc365", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
         ],
