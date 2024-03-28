@@ -631,7 +631,7 @@ def genital_mesh_xml(meshObject, stem):
 <node id="Objects">
   <attribute id="LOD" type="uint8" value="{mesh[0]}" />
   <attribute id="MaterialID" type="FixedString" value="{mesh[1]}" />
-  <attribute id="ObjectID" type="FixedString" value="{stem}.HUM_F_NKD_Body_Genital_D_Pubes_Mesh.{mesh[2]}" />
+  <attribute id="ObjectID" type="FixedString" value="{stem}.Genital_Mesh.{mesh[2]}" />
 </node>
         """
     return meshXML
