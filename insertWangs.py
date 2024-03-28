@@ -101,8 +101,6 @@ genitals = {
         "Female_Genital_B": [
             [0, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-            [1, "0fcbfb16-9551-0ea0-f97e-ff499a408b01", 2],
-            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
         # Female Strong
         "FemaleStrong_Genital_A": [
@@ -255,8 +253,6 @@ genitals = {
         "Female_Genital_B": [
             [0, "827afee2-dd5e-8663-ba8b-7c184e7de228", 0],
             [0, "79c3b32b-a243-b949-4aea-4ff285d50fca", 1],
-            [1, "827afee2-dd5e-8663-ba8b-7c184e7de228", 2],
-            [1, "79c3b32b-a243-b949-4aea-4ff285d50fca", 3],
         ],
         # Female Strong
         "FemaleStrong_Genital_A": [
@@ -761,10 +757,11 @@ def create_mod(args):
             # Insert content nodes to character creation visuals.
             for element in merged_children:
                 element.append(insert_dick_merged(model, uuid))
-
                 if model["raceName"] == "Humans":
+                    model["raceUUID"] = race["Elves"]
                     model["raceName"] = "Elves"
-                    model["raceUUID"] = race[model["raceName"]]
+                    model["name"] = data.text + " Elves"
+                    uuid = generate_uuid()
 
                     # Insert content nodes to character creation visuals.
                     for element in visuals_children:
@@ -772,25 +769,14 @@ def create_mod(args):
                             insert_dick_character_creation(model, handle, uuid)
                         )
 
-                    # Insert content nodes to character creation visuals.
+                    # Insert content nodes to merged.lsx.
                     for element in merged_children:
                         element.append(insert_dick_merged(model, uuid))
 
-                    model["raceName"] = "Humans"
-                    model["raceUUID"] = race["HalfElfs"]
-
-                    # Insert content nodes to character creation visuals.
-                    for element in visuals_children:
-                        element.append(
-                            insert_dick_character_creation(model, handle, uuid)
-                        )
-
-                    # Insert content nodes to character creation visuals.
-                    for element in merged_children:
-                        element.append(insert_dick_merged(model, uuid))
-
-                    model["raceName"] = "Humans"
                     model["raceUUID"] = race["Drows"]
+                    model["raceName"] = "Elves"
+                    model["name"] = data.text + " Drows"
+                    uuid = generate_uuid()
 
                     # Insert content nodes to character creation visuals.
                     for element in visuals_children:
@@ -798,7 +784,22 @@ def create_mod(args):
                             insert_dick_character_creation(model, handle, uuid)
                         )
 
+                    # Insert content nodes to merged.lsx.
+                    for element in merged_children:
+                        element.append(insert_dick_merged(model, uuid))
+
+                    model["raceUUID"] = race["HalfElfs"]
+                    model["raceName"] = "Humans"
+                    model["name"] = data.text + " HalfElfs"
+                    uuid = generate_uuid()
+
                     # Insert content nodes to character creation visuals.
+                    for element in visuals_children:
+                        element.append(
+                            insert_dick_character_creation(model, handle, uuid)
+                        )
+
+                    # Insert content nodes to merged.lsx.
                     for element in merged_children:
                         element.append(insert_dick_merged(model, uuid))
 
